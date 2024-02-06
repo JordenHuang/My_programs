@@ -1,0 +1,222 @@
+// Xresources
+// nord theme
+
+! special
+*.foreground:   #d8dee9
+*.background:   #2e3440
+*.cursorColor:  #d8dee9
+
+! black
+*.color0:       #3b4252
+*.color8:       #4c566a
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #81a1c1
+*.color12:      #81a1c1
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #88c0d0
+*.color14:      #8fbcbb
+
+! white
+*.color7:       #e5e9f0
+*.color15:      #eceff4
+
+
+
+
+
+----------------------------------------------
+// Mine
+
+// Probably use this one for awesome and other tools' theme
+// or maybe mix with the vs-code light theme into my own theme
+
+! special
+*.foreground:   #333333
+*.background:   #f8f8f8
+*.cursorColor:  #2e3440
+
+! black
+*.color0:       #000000
+*.color8:       #4c566a
+
+! red
+*.color1:       #cd3131
+*.color9:       #bf616a
+
+! green
+*.color2:       #00bc00
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #0451a5
+*.color12:      #81a1c1
+
+! magenta
+*.color5:       #bc05bc
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #88c0d0
+*.color14:      #8fbcbb
+
+! white
+*.color7:       #e5e9f0
+*.color15:      #eceff4
+
+
+
+
+
+----------------------------------------------
+// my version of nord theme
+
+! special
+*.foreground:   #2e3440
+*.background:   #f8f8f8
+*.cursorColor:  #2e3440
+
+! black
+*.color0:       #3b4252
+*.color8:       #4c566a
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #81a1c1
+*.color12:      #81a1c1
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #88c0d0
+*.color14:      #8fbcbb
+
+! white
+*.color7:       #e5e9f0
+*.color15:      #eceff4
+
+
+----------------------------------------------
+// vs-code light
+
+! special
+*.foreground:   #333333
+*.background:   #f8f8f8
+*.cursorColor:  #333333
+
+! black
+*.color0:       #000000
+*.color8:       #666666
+
+! red
+*.color1:       #cd3131
+*.color9:       #cd3131
+
+! green
+*.color2:       #00bc00
+*.color10:      #14ce14
+
+! yellow
+*.color3:       #949800
+*.color11:      #b5ba00
+
+! blue
+*.color4:       #0451a5
+*.color12:      #0451a5
+
+! magenta
+*.color5:       #bc05bc
+*.color13:      #bc05bc
+
+! cyan
+*.color6:       #0598bc
+*.color14:      #0598bc
+
+! white
+*.color7:       #555555
+*.color15:      #a5a5a5
+
+
+
+----------------------------------------------
+// from Github
+! vscode light .Xresources
+
+*.foreground: #000000
+*.background: #ffffff
+*.cursorColor: #000000
+
+*.color0: #ffffff
+*.color1: #c72e0f
+*.color2: #008000
+*.color3: #795e25
+*.color4: #007acc
+*.color5: #af00db
+*.color6: #56b6c2
+*.color7: #000000
+*.color8: #808080
+*.color9: #c72e0f
+*.color10: #008000
+*.color11: #795e25
+*.color12: #007acc
+*.color13: #af00db
+*.color14: #56b6c2
+*.color15: #000000
+
+
+-----------------------------
+// Low contrast dark theme
+
+background    = "#fdfdfd",
+foreground    = "#000000",
+cursorcolor   = "#000000",
+black         = "#242424",
+light_black   = "#666666",
+red           = "#c20a0a",
+light_red     = "#e06c6c",
+green         = "#38c20a",
+light_green   = "#89e06c",
+yellow        = "#da730b",
+light_yellow  = "#e9a663",
+blue          = "#0a66c2",
+light_blue    = "#63a6e9",
+magenta       = "#733fa6",
+light_magenta = "#b78fef",
+cyan          = "#0a94c2",
+light_cyan    = "#63c7e9",
+white         = "#cdcdcd",
+light_white   = "#eaeaea",

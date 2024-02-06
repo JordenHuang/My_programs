@@ -1,0 +1,196 @@
+rgb
+r: red
+g: green
+b: blue
+
+hsl
+h: hue (顏色)
+s: saturation (顏色明暗)
+l: lightness (顏色亮度)
+
+
+
+# my conversion
+relation between rgb and hsl
+
+
+--------------------------------------
+===== Version 2 =====
+--------------------------------------------
+
+# my color (hsl)
+! special
+background
+foreground
+cursorcolor
+"#fdfdfd"
+"#000000"
+"#000000"
+
+! black
+"#242424"
+"#666666"
+
+! red
+0, 90, 40       #c20a0a
+0, 65, 65       #e06c6c #d74242  (l 各降10)
+
+! green
+105, 90, 40     #38c20a
+105, 65, 65     #89e06c #67d742
+
+! yellow
+30, 90, 45      #da730b
+30, 75, 65      #e9a663 #e28c36
+
+! blue
+210, 90, 40     #0a66c2
+210, 75, 65     #63a6e9 #368ce2
+
+! magenta
+270, 45, 45     #733fa6
+265, 75, 75     #B78FEF #9b36e2
+
+! cyan
+195, 90, 40     #0a94c2
+195, 75, 65     #63c7e9 #36b7e2
+
+! white
+"#cdcdcd"
+"#eaeaea"
+
+--[[
+user.colors = {
+    background    = "#fdfdfd",
+    foreground    = "#000000",
+    cursorcolor   = "#000000",
+    black         = "#242424",
+    light_black   = "#666666",
+    red           = "#c20a0a",
+    light_red     = "#d74242",
+    green         = "#38c20a",
+    light_green   = "#67d742",
+    yellow        = "#da730b",
+    light_yellow  = "#e28c36",
+    blue          = "#0a66c2",
+    light_blue    = "#368ce2",
+    magenta       = "#733fa6",
+    light_magenta = "#9b36e2",
+    cyan          = "#0a94c2",
+    light_cyan    = "#36b7e2",
+    white         = "#cdcdcd",
+    light_white   = "#eaeaea",
+}
+]]
+
+
+I think the color below is better
+user.colors = {
+    background    = "#fdfdfd",
+    foreground    = "#000000",
+    cursorcolor   = "#000000",
+    black         = "#242424",
+    light_black   = "#666666",
+    red           = "#c20a0a",
+    light_red     = "#e06c6c",
+    green         = "#38c20a",
+    light_green   = "#89e06c",
+    yellow        = "#da730b",
+    light_yellow  = "#e9a663",
+    blue          = "#0a66c2",
+    light_blue    = "#63a6e9",
+    magenta       = "#733fa6",
+    light_magenta = "#b78fef",
+    cyan          = "#0a94c2",
+    light_cyan    = "#63c7e9",
+    white         = "#cdcdcd",
+    light_white   = "#eaeaea",
+}
+
+
+
+--------------------------------------
+===== Version 1 =====
+--------------------------------------
+
+# my color (hsv)
+! special
+fdfdfd
+000000
+000000
+
+! black
+242424
+666666
+
+! red
+0, 100, 80
+0, 60, 90
+
+! green
+105, 100, 80
+105, 60, 90
+
+! yellow
+30, 100, 80
+30, 60, 90
+
+! blue
+220, 100, 80
+220, 60, 90
+
+! magenta
+275, 100, 80
+275, 60, 90
+
+! cyan
+185, 100, 80
+185, 60, 90
+
+! white
+cdcdcd
+eaeaea
+
+
+--------------------------------------------
+
+# my color (hsl)
+! special
+background
+foreground
+cursorcolor
+"#fdfdfd"
+"#000000"
+"#000000"
+
+! black
+"#242424"
+"#666666"
+
+! red
+0, 100, 40      #cc0000
+0, 75, 65       #e96363
+
+! green
+105, 100, 40    #33cc00
+105, 75, 65     #84e963
+
+! yellow
+30, 100, 40     #cc6600
+30, 75, 65      #e9a663
+
+! blue
+220, 100, 40    #0044cc
+220, 75, 65     #638fe9
+
+! magenta
+275, 100, 40    #7700cc
+275, 75, 65     #b163e9
+
+! cyan
+185, 100, 40    #00bbcc
+185, 75, 65     #63dee9
+
+! white
+"#cdcdcd"
+"#eaeaea"

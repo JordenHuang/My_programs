@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Card Memo Trainer</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="icons/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
+
+  </head>
+
+  <body>
+    <div class="overlay">test</div>
+
+    <div class="overlay-2"></div>
+    <div class="overlay-2-inside">
+      <ol>
+        <h2 style="font-size: large;">Home page</h2>
+        <li>Hold your phone or tablet horizontally</li>
+        <li>Click <b>'Start'</b> button to start training</li>
+        <li>Use <b>'Contact me'</b> button to contact the author</li>
+      </ol>
+      <ol>
+        <h2 style="font-size: large;">Training page</h2>
+        <li>Click the bottom bar to change to next card<br>
+          if you are using computer, press:
+          <ul>
+            <li>z or arrow right - to change to next card</li>
+            <li>x or arrow up - to change to the next three cards</li>
+          </ul>
+        </li>
+        <br>
+        <li>After memorizing all the cards, you have 5 minutes to recall and submit the cards in the correct order
+          on the page, by click:
+          <ul>
+            <li>The suits button - to change the suit,</li>
+            <li>The cards - to select the card,</li>
+            <li>click the boxes - to select the place you want to put the next card,</li>
+            <li>or, double click(or drag the card on mobile device) - to take the card down</li>
+          </ul>
+          if you finished , click the <b>Finish</b> button (or if the time is up), it
+          will goes to the page that shows you the answer
+        </li>
+        <br>
+        <li>In the show answer page, you can see your score and time.<br>
+          If you want to see the correct answer, click <b>Original</b> button.
+        </li>
+        <br>
+        <li>You can <b>Hide the time</b> of the timer by click the menu on the left up corner
+          and then click the Hide time button.
+        </li>
+      </ol>
+      <div>
+        click outside the box to close
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <button class="menu-btn" role="button">
+        <!-- arrow/hamberger from Font Awesome  -->
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="setting-label">Menu</div>
+      <div class="btn-group" role="group">
+        <button id="how-to-use-btn">How to use</button><br>
+      </div>
+      <div class="btn-group" role="group">
+        <button>Memory techniques</button><br>
+      </div>
+      <div class="btn-group" role="group">
+        <button>Contact me</button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h1>Card Memo Trainer</h1>
+
+      <div class="myBtn-group" role="group">
+        <a href="start_page.html">
+          <button>Start</button>
+        </a>
+        <a><button id="history-btn">History</button></a>    
+        <a><button id="setting-btn">How to use</button></a>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

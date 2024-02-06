@@ -1,0 +1,48 @@
+/* *{
+background-color: #2E3440;
+background-color: #3B4252;
+background-color: #434C5E;
+background-color: #4C566A;
+
+background-color: #D8DEE9;
+background-color: #E5E9F0;
+background-color: #ECEFF4;
+
+background-color: #8FBCBB;
+background-color: #88C0D0;
+background-color: #81A1C1;
+background-color: #5E81AC;
+
+background-color: #BF616A;
+background-color: #D08770;
+background-color: #EBCB8B;
+background-color: #A3BE8C;
+background-color: #B48EAD;
+} */
+
+body{
+    background-color: #ECEFF4aa;
+    /* = rgba(237, 240, 245, 0.7)*/
+    font-family: consolas;
+}
+
+/* Is it possible to convert rgba to rgb, and the result is the same color */
+h2{
+    color: rgb(168, 219, 117);
+    background-color: rgba(168, 219, 117, 0.376);
+    color: rgb(222, 241, 203);
+}
+
+h1, p{
+    color: #2E3440;
+    font-size: larger;
+}
+
+div{
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    left: 10%;
+    padding: 15px;
+    background-color: #ffffff;
+}

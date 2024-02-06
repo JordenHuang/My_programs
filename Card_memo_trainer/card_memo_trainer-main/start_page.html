@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <title>Card Memo Trainer</title>
+    <link rel="stylesheet" href="start_page.css" />
+
+    <link rel="stylesheet" href="icons/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
+  </head>
+
+  <body>
+    <div id="loading">LOADING...</div>
+
+    <button class="menu-btn" role="button" title="menu">
+      <!-- arrow/hamberger from Font Awesome  -->
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="overlay"></div>
+    <div class="overlay-inside">
+      <div class="oi-btn-group" role="group">
+        <button id="restart" class="oi-btn">Restart</button><br />
+        <button id="home" class="oi-btn">Home</button><br />
+        <button id="hide-time" class="oi-btn">Hide time</button><br />
+      </div>
+      <div class="overlay-inside-div">click outside the box to close</div>
+    </div>
+
+    <div class="card-container">
+      <div class="bar">click here to start</div>
+
+      <div class="cards">
+        <div class="card next">
+          <img src="card_pics/poker-card-back.png" alt="" />
+          <div>next</div>
+        </div>
+
+        <div class="card box1">
+          <img src="card_pics/poker-card-back.png" alt="" />
+        </div>
+        <div class="card box2">
+          <img src="card_pics/poker-card-back.png" alt="" />
+        </div>
+        <div class="card box3">
+          <img src="card_pics/poker-card-back.png" alt="" />
+        </div>
+
+        <div class="card memoed">
+          <img src="card_pics/poker-card-back.png" alt="" />
+          <div>memoed</div>
+        </div>
+      </div>
+      
+      <div class="timer">
+        00:00:00
+      </div>
+      <div class="timer-not-show">memorizing...</div>
+    </div>
+
+    <div class="checker-container">
+      <div class="checker-group" role="group">
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+        <img class="checker-box" />
+      </div>
+      
+      <div class="checker-selection-group" role="group">
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <img class="checker-selection-box" />
+        <button id="finish-btn" class="suits"><b>Finish</b></button>
+      </div>
+      <div class="suits">
+        <button id="spades">
+          <img src="card_pics/spades.png" alt="spades" />
+        </button>
+        <button id="hearts">
+          <img src="card_pics/hearts.png" alt="hearts" />
+        </button>
+        <button id="diamonds">
+          <img src="card_pics/diamonds.png" alt="diamonds" />
+        </button>
+        <button id="clubs">
+          <img src="card_pics/clubs.png" alt="clubs" />
+        </button>
+      </div>
+      <!-- <button id="finish-btn" class="suits"><b>Finish</b></button> -->
+
+      <div class="count-down-timer">05:00</div>
+      <div class="count-down-timer-not-show">recalling...</div>
+    </div>
+
+    <div class="show-answer-container">
+      <div class="score">Score: 0/52<br>Time used: </div>
+      <div class="show-answer-group" role="group">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+        <img class="show-answer-box">
+      </div>
+
+      <button class="show-original" title="Show original cards sets">Original</button>
+    </div>
+
+    <script src="start_page.js"></script>
+  </body>
+</html>

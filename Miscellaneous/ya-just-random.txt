@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define LETTER_LENGTH 96
+#define DELAY 10
+
+
+void create_ascii_printable_character(char *letters){
+    int i;
+    for(i=' '; i <= '~'; i++){
+        letters[i-32] = i;
+    }
+}
+
+
+void just_random(char *letters, int len, int delay_time_range){
+    int i, j, k;
+    srand((unsigned)time(NULL));
+
+    for(i=0; i<len*2; i++){
+        // printf("\r");
+        printf("\e[1;1H\e[2J");
+        for(j=0; j<len; j++){
+            for(k=0; k<len; k++){
+                printf("%c", letters[rand() % LETTER_LENGTH]);
+                Sleep(rand() % delay_time_range);
+            }
+            printf("\n");
+        }
+        // printf("\t");
+        
+    }
+}
+
+
+int main(){
+    char letters[LETTER_LENGTH];
+
+    create_ascii_printable_character(letters);
+
+    just_random(letters, 80, 30);
+    
+
+    return 0;
+}
