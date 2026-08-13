@@ -1,0 +1,117 @@
+// https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/ 
+// https://github.com/Jade570/p5js-fps_example/tree/master
+// https://cdn.jsdelivr.net/npm/p5-first-person-camera@1.0.1/FirstPersonCamera.js
+
+let pointerIsLocked = false;
+
+let position;
+// horizontal angle : toward -Z
+let horizontalAngle;
+// vertical angle : 0, look at the horizon
+let verticalAngle;
+// Initial Field of View
+let initialFoV;
+
+let speed = 1; // 3 units / second
+let mouseSpeed = 0.0003;
+
+let direction;
+let right;
+let up;
+let camLookat;
+
+let keyForward, keyBack, keyLeft, keyRight;
+
+
+function setup() {
+  createCanvas(600, 400, WEBGL);
+
+  position = createVector(0, 0, 0);
+  horizontalAngle = 3.14;
+  verticalAngle = 0.0;
+  initialFoV = 45.0;
+  up = createVector(0, 0, 0);
+  right = createVector(1, 0, 0);
+  camLookat = createVector(0, 0, 0);
+
+  document.addEventListener('pointerlockchange', onLockChange, false);
+}
+
+function draw() {
+  background(135, 206, 235);
+
+  if (pointerIsLocked === true) {
+    horizontalAngle += mouseSpeed * deltaTime * movedX * -1;
+    verticalAngle += mouseSpeed * deltaTime * movedY;
+
+    // Movement controls
+    let dds = p5.Vector.mult(direction, deltaTime * speed);
+    let rds = p5.Vector.mult(right, deltaTime * speed);
+    // w
+    if (keyIsDown(87) || keyIsDown(UP_ARROW)) {
+      position.add(dds);
+    }
+    // s
+    if (keyIsDown(83) || keyIsDown(DOWN_ARROW)) {
+      position.sub(dds);
+    }
+    // a
+    if (keyIsDown(65) || keyIsDown(LEFT_ARROW)) {
+      position.sub(rds);
+    }
+    // d
+    if (keyIsDown(68) || keyIsDown(RIGHT_ARROW)) {
+      position.add(rds);
+    }
+  }
+
+  direction = createVector(
+    Math.cos(verticalAngle) * Math.sin(horizontalAngle),
+    Math.sin(verticalAngle),
+    Math.cos(verticalAngle) * Math.cos(horizontalAngle)
+  );
+
+  right = createVector(
+    Math.sin(horizontalAngle - 3.14/2.0),
+    0,
+    Math.cos(horizontalAngle - 3.14/2.0)
+  );
+
+  up = right.cross(direction);
+
+  camLookat = p5.Vector.add(position, direction);
+
+  camera(
+    position.x, position.y, position.z,
+    camLookat.x, camLookat.y, camLookat.z,
+    up.x, up.y, up.z
+  );
+
+  push();
+  let boxPos = createVector(0, 0, -400);
+  translate(boxPos);
+  box();
+  pop();
+
+  // cursor
+  drawingContext.clear(drawingContext.DEPTH_BUFFER_BIT);
+  camera();
+  push();
+  line(-20, 0, 20, 0);
+  line(0, -20, 0, 20);
+  pop();
+}
+
+function mouseClicked() {
+  //lock pointer
+  requestPointerLock();
+  pointerIsLocked = true;
+}
+
+function onLockChange() {
+  if (document.pointerLockElement !== canvas) {
+    exitPointerLock();
+    pointerIsLocked = false;
+  }
+}
+

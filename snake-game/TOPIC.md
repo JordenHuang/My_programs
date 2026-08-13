@@ -1,0 +1,4 @@
+# Topic
+
+- Iterator
+- Class initialization
